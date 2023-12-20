@@ -1,0 +1,151 @@
+:root {
+    --azul-degrade: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-cor-botao: #3F2E3E;
+    --fonte-cor-secundaria: #F99417;
+    --fonte-cor-texto: rgb(236, 241, 243);
+
+}
+
+body {
+    background-image: url(/assets/relogio-de-giz.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.barbaeria__descricao {
+    background: rgb(230, 215, 215);
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #002F52;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cabecalho__menu__link__ {
+    color: #F99417;
+}
+
+.apresentacao__conteudo {
+    text-align: justify;
+    color: ghostwhite;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+.secundario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+    column-gap: 0;
+    border-radius: 4px;
+    height: max-content;
+
+}
+
+.lista-itens li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    
+   
+
+}
+
+
+.lista-itens:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .8;
+}
+
+
+img {
+    width: 200px;
+    gap: 5rem;
+    gap: 6em;
+    width: 58vw;
+    border-radius: 6px;
+    transition: scale 650ms ease, opacity 550ms linear;
+
+
+
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.descricao-lista-imagem {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.rodape {
+    background: #3F2E3E;
+}
+
+.texto-rodape {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    color: #fffcfc;
+    font-family: 'Merriweather' sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .lista-itens li {
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+        padding: 3rem 1.5rem;
+
+    }
+
+    .descricao-lista-imagem {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-rodape, .rodape {
+        display: none;
+    }
+
+    img {
+        width: 18vw;
+    }
+}
