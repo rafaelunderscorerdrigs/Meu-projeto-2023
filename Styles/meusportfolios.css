@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(/assets/relogio-de-giz.jpg);
+    background-image: url(/assets/particulas-luz.jpg);
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -16,6 +16,8 @@ body {
     padding: 0;
     margin: 0;
 }
+
+
 
 .barbaeria__descricao {
     background: rgb(230, 215, 215);
@@ -40,6 +42,20 @@ body {
     color: #F99417;
 }
 
+.apresentacao {
+    background: transparent;
+    backdrop-filter: blur(70px);
+}
+
+.titulo, .texto__ {
+    text-transform: uppercase;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 26px;
+}
+
 .apresentacao__conteudo {
     text-align: justify;
     color: ghostwhite;
@@ -55,8 +71,8 @@ body {
     justify-content: space-around;
     align-items: center;
     background: transparent;
-    backdrop-filter: blur(10px);
-    border: 1px solid gray;
+    backdrop-filter: blur(9px);
+    border: 1px solid rgb(12, 89, 232);
     column-gap: 0;
     border-radius: 4px;
     height: max-content;
